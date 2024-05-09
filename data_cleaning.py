@@ -74,4 +74,4 @@ print(mcu_screentime_filtered.head())
 
 #Savingto file and printing final data summary
 mcu_screentime_filtered.to_csv('mcu_screentime_filtered.csv', index=False)
-print(f"Final Data Summary: After data cleaning, the datasets provide information on {len(mcu_box_office['movie_title'])} movies, recording screen time in minutes for {len(mcu_screentime_filtered)} characters.")
+print(f"Final Data Summary: After cleaning the datasets provides information on {len(mcu_box_office['movie_title'])} movies, recording screen time in minutes for {len(mcu_screentime_filtered)} characters.")

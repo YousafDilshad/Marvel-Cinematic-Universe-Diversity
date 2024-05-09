@@ -16,7 +16,7 @@ def get_gender(character_name):
             model="gpt-3.5-turbo-0125",
             messages=[{"role": "user", "content": prompt}]
         )
-    #Printing API esponse
+    #Printing API response
     print(response)    
     
     #Extracting answer
@@ -25,13 +25,13 @@ def get_gender(character_name):
 
 #Defining function to generate race
 def get_race(character_name):
-    prompt = f"What is the race of the character {character_name} in the Marvel Cinematic Universe? Provide a one/two word answer from the following list: Caucasian, Asian, African-American, Middle Eastern, Hispanic."
+    prompt = f"What is the race of the character {character_name} in the Marvel Cinematic Universe? Provide a one/two word answer from the following list: Caucasian, Asian, Black, Middle Eastern, Hispanic, Alien."
     #Sending a request to OpenAI API 
     response = openai.chat.completions.create(
             model="gpt-3.5-turbo-0125",
             messages=[{"role": "user", "content": prompt}]
         )
-    #Printing API esponse
+    #Printing API response
     print(response)    
     
     #Extracting answer
