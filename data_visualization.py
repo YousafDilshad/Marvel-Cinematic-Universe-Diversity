@@ -142,11 +142,11 @@ scatter_gender = sns.scatterplot(ax=axes[1], x='gender_diversity', y='movie_titl
 
 scatter_gender.set_xlim(0, 100)
 scatter_gender.set_xlabel('Gender Diversity')
-scatter_gender.set_ylabel('Movie Title',ha='center')
+scatter_gender.set_ylabel('Movie Title',ha='right')
 scatter_gender.set_title('Gender Diversity vs. Movie Title with Box Office Size and Audience Score')
 scatter_gender.legend(loc='center left', bbox_to_anchor=(1, 0.5), title='Audience Score', markerscale=0.5)
-scatter_gender.legend(title='Worldwide Box Office', loc='center left', bbox_to_anchor=(1, 0.25), markerscale=0.5)
-
+scatter_gender.legend(loc='center left', bbox_to_anchor=(1, 0.25), markerscale=0.5)
+scatter_gender.invert_yaxis()  # Invert the y-axis
 
 # Create the scatter plot for racial diversity (flipped horizontally)
 scatter_race = sns.scatterplot(ax=axes[0], x='racial_diversity', y='movie_title', size='worldwide_box_office', hue='audience_score',
@@ -158,7 +158,17 @@ scatter_race.set_xlabel('Racial Diversity')
 scatter_race.set_ylabel('')
 scatter_race.set_title('Racial Diversity vs. Movie Title with Box Office Size and Audience Score')
 scatter_race.legend_.remove()
+scatter_race.invert_yaxis()  # Invert the y-axis
 
+# Create a mapping of movie titles to y-axis positions
+title_positions = {title: i for i, title in enumerate(mcu_final_data['movie_title'])}
+
+# Add lines for mcu_phase changes
+phase_positions = mcu_final_data.groupby('mcu_phase')['movie_title'].last().map(title_positions).tolist()
+for pos in phase_positions:
+    for ax in axes:
+        ax.axhline(y=pos, color='gray', linestyle='--', linewidth=1)
+        
 plt.tight_layout()
 
 plt.savefig('scatter_plots_side_by_side.png')
