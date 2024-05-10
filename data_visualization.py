@@ -99,3 +99,63 @@ scatter_race.legend(loc='center left', bbox_to_anchor=(1, 0.5), title='Audience 
 plt.legend( loc='center left', bbox_to_anchor=(1, 0.25), markerscale=0.5)
 plt.tight_layout()
 plt.savefig('scatter_racial_diversity.png')
+
+
+# Convert movie_title to a categorical variable for proper ordering
+mcu_final_data['movie_title'] = pd.Categorical(mcu_final_data['movie_title'], categories=mcu_final_data['movie_title'].unique(), ordered=True)
+
+# Create a figure and axis
+fig, ax = plt.subplots(figsize=(12, 6))
+
+# Plot racial diversity
+sns.lineplot(x='movie_title', y='racial_diversity', data=mcu_final_data, color='red', label='Racial Diversity', ax=ax)
+
+# Plot gender diversity
+sns.lineplot(x='movie_title', y='gender_diversity', data=mcu_final_data, color='orange', label='Gender Diversity', ax=ax)
+
+# Set labels and title
+ax.set(xlabel='Movie Title', ylabel='Diversity', title='Trend of Racial and Gender Diversity Over Movies')
+
+# Rotate x-axis labels for better readability
+plt.xticks(rotation=45, ha='right')
+
+# Add lines for mcu_phase changes
+last_phase = mcu_final_data['mcu_phase'].iloc[0]
+for i, phase in enumerate(mcu_final_data['mcu_phase']):
+    if phase != last_phase:
+        plt.axvline(x=i, color='gray', linestyle='--', linewidth=0.5)
+        last_phase = phase
+
+# Show plot
+plt.legend()
+plt.tight_layout()
+plt.savefig('lineplot.png')
+
+# Create a custom palette from red to yellow (reversed)
+custom_palette = sns.color_palette("autumn", as_cmap=True)
+
+# Create the scatter plot for gender diversity
+fig, axes = plt.subplots(1, 2, figsize=(18, 8), sharey=True)
+scatter_gender = sns.scatterplot(ax=axes[1], x='gender_diversity', y='movie_title', size='worldwide_box_office', hue='audience_score',
+                                 palette=custom_palette, sizes=(50, 500), size_order=mcu_final_data['worldwide_box_office'].sort_values().unique(),
+                                 data=mcu_final_data)
+scatter_gender.invert_xaxis()
+scatter_gender.set_xlabel('Gender Diversity')
+scatter_gender.set_ylabel('Movie Title')
+scatter_gender.set_title('Gender Diversity vs. Movie Title with Box Office Size and Audience Score')
+scatter_gender.legend(loc='center left', bbox_to_anchor=(1, 0.5), title='Audience Score', markerscale=0.5)
+scatter_gender.legend(title='Worldwide Box Office', loc='center left', bbox_to_anchor=(1, 0.25), markerscale=0.5)
+
+
+# Create the scatter plot for racial diversity (flipped horizontally)
+scatter_race = sns.scatterplot(ax=axes[0], x='racial_diversity', y='movie_title', size='worldwide_box_office', hue='audience_score',
+                               palette=custom_palette, sizes=(50, 500), size_order=mcu_final_data['worldwide_box_office'].sort_values().unique(),
+                               data=mcu_final_data)
+scatter_race.set_xlabel('Racial Diversity')
+scatter_race.set_ylabel('')
+scatter_race.set_title('Racial Diversity vs. Movie Title with Box Office Size and Audience Score')
+scatter_race.legend_.remove()
+
+plt.tight_layout()
+
+plt.savefig('scatter_plots_side_by_side.png')
