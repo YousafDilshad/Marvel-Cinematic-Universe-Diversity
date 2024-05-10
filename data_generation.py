@@ -42,5 +42,5 @@ def get_race(character_name):
 mcu_filtered["gender"] = mcu_filtered["character_name"].apply(get_gender)
 mcu_filtered["race"] = mcu_filtered["character_name"].apply(get_race)
 
-# Save the updated dataframe
+#Save the updated dataframe
 mcu_filtered.to_csv("mcu_filtered_with_gender_and_race.csv", index=False)
