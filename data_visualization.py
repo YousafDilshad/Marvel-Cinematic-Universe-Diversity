@@ -139,9 +139,10 @@ fig, axes = plt.subplots(1, 2, figsize=(18, 8), sharey=True)
 scatter_gender = sns.scatterplot(ax=axes[1], x='gender_diversity', y='movie_title', size='worldwide_box_office', hue='audience_score',
                                  palette=custom_palette, sizes=(50, 500), size_order=mcu_final_data['worldwide_box_office'].sort_values().unique(),
                                  data=mcu_final_data)
-scatter_gender.invert_xaxis()
+
+scatter_gender.set_xlim(0, 100)
 scatter_gender.set_xlabel('Gender Diversity')
-scatter_gender.set_ylabel('Movie Title')
+scatter_gender.set_ylabel('Movie Title',ha='center')
 scatter_gender.set_title('Gender Diversity vs. Movie Title with Box Office Size and Audience Score')
 scatter_gender.legend(loc='center left', bbox_to_anchor=(1, 0.5), title='Audience Score', markerscale=0.5)
 scatter_gender.legend(title='Worldwide Box Office', loc='center left', bbox_to_anchor=(1, 0.25), markerscale=0.5)
@@ -151,6 +152,8 @@ scatter_gender.legend(title='Worldwide Box Office', loc='center left', bbox_to_a
 scatter_race = sns.scatterplot(ax=axes[0], x='racial_diversity', y='movie_title', size='worldwide_box_office', hue='audience_score',
                                palette=custom_palette, sizes=(50, 500), size_order=mcu_final_data['worldwide_box_office'].sort_values().unique(),
                                data=mcu_final_data)
+scatter_race.invert_xaxis()
+scatter_race.set_xlim(100, 0)
 scatter_race.set_xlabel('Racial Diversity')
 scatter_race.set_ylabel('')
 scatter_race.set_title('Racial Diversity vs. Movie Title with Box Office Size and Audience Score')
