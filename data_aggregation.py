@@ -43,3 +43,38 @@ mcu_data['total_time_mins'] = mcu_data.iloc[:, :27].sum(axis=1)
 
 #Saving to file
 mcu_data.to_csv('mcu_filtered_final.csv', index=False)
+
+#Importing box office and critical rating data
+mcu_boxoffice = pd.read_csv("mcu_box_office.csv")
+print(mcu_boxoffice)
+
+#Calculate total value of columns 1 to 27 by gender
+gender_totals = mcu_data.groupby('gender').sum().iloc[:, :27]
+
+#Calculate total value of columns 1 to 27 by race
+race_totals = mcu_data.groupby('race').sum().iloc[:, :27]
+
+#Calculate gender diversity for each column 1 to 27 where gender diversity = female/total
+gender_diversity = {}
+for column in mcu_data.columns[0:27]:
+    female_total = mcu_data[mcu_data['gender'] == 'Female'][column].sum()
+    total = mcu_data[column].sum()
+    gender_diversity[column] = 100*female_total / total
+
+#Calculate racial diversity for each column 1 to 27 where racial diversity = values that are not Caucasian/total
+racial_diversity = {}
+for column in mcu_data.columns[0:27]:
+    non_caucasian_total = mcu_data[mcu_data['race'] != 'Caucasian'][column].sum()
+    total = mcu_data[column].sum()
+    racial_diversity[column] = 100*non_caucasian_total / total
+
+#Add gender diversity to mcu_boxoffice
+mcu_boxoffice['gender_diversity'] = mcu_boxoffice['movie_title'].map(gender_diversity)
+mcu_boxoffice['gender_diversity'] = mcu_boxoffice['gender_diversity'].round(2)
+
+#Add racial diversity to mcu_boxoffice
+mcu_boxoffice['racial_diversity'] = mcu_boxoffice['movie_title'].map(racial_diversity)
+mcu_boxoffice['racial_diversity'] = mcu_boxoffice['racial_diversity'].round(2)
+
+#Saving to file
+mcu_boxoffice.to_csv('mcu_box_office_with_diversity.csv', index=False)
