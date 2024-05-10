@@ -8,7 +8,7 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 3:45,,2:00,4:00,,9:00,,,,,,,,,,,,,,,2:45,,,,,,,Agent Phil Coulson,Male,Caucasian
 3:45,,1:30,,,,,,,,,,,,,,,,,,,,,,,,,Christine Everhart,Female,Caucasian
 1:45,,,,,,,,,,,,,,,,,,,,,,,,,,,Abu Bakaar,Male,Middle Eastern
-1:15,,,,,,,,,,,,,,,6:00,,,,,,:45,7:30,,,,3:45,"Harold ""Happy"" Hogan",Male.,Caucasian
+1:15,,,,,,,,,,,,,,,6:00,,,,,,:45,7:30,,,,3:45,"Harold ""Happy"" Hogan",Male,Caucasian
 :45,,,,,,,,,,,,,,,,,,,,,,2:00,,,,,William Ginter Riva,Male,Caucasian
 :15,,5:30,:45,:30,18:15,,,15:30,,,,,,,,,,,,,,,,,,,Director Nick Fury,Male,Black
 ,51:45:00,,,,21:45,:45,,,,20:00,,,,,,17:15,,9:30,,:15,20:00,,,:30,,,The Hulk,Male,Caucasian
@@ -19,7 +19,7 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 ,2:15,,,,,,,,,,,,,,,,,,,,,,,,,,Dr. Leonard Samson,Male,Caucasian
 ,2:15,,,,,,,,,,,,,,,,,,,,,,,,,,Maj. Kathleen Sparr,Female,Caucasian
 ,:15,,,,,,,,,,,,,,2:00,,,,,,,6:00,,,,:30,Roger Harrington,Male,Caucasian
-,,20:45,,,,,,,,,,,,,,,,,,,,,,,,,Whiplash,Male.,White
+,,20:45,,,,,,,,,,,,,,,,,,,,,,,,,Whiplash,Male,Caucasian
 ,,16:30,,,,,,,,,,,,,,,,,,,,,,,,,Justin Hammer,Male,Caucasian
 ,,9:15,,,24:45:00,,,24:45:00,,18:00,,12:00,,,,:15,,5:00,,:30,16:00,,65:30:00,,,,Black Widow,Female,Caucasian
 ,,4:15,,,,6:15,,,,,,,,,,,,,,,,,,,,,Happy Hogan,Male,Caucasian
@@ -38,10 +38,10 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 ,,,7:00,,,,2:00,,,,,,,,,:15,,,,,,,,,,,Fandral,Male,Caucasian
 ,,,6:30,,,,1:00,,,,,,,,,1:00,,,,,,,,,,,Hogun,Male,Asian
 ,,,4:15,,,,4:15,,,:30,,,,,,4:30,,:45,,,,,,,,,Heimdall,Male,Black
-,,,3:30,,,,,,,,,,,,,,,,,,,,,,,,Laufey,Male,Frost Giant
+,,,3:30,,,,,,,,,,,,,,,,,,,,,,,,Laufey,Male,Alien
 ,,,2:00,,,,4:00,,,,,,,,,,,,,,2:45,,,,,,Frigga,Female,Caucasian
 ,,,1:00,,:30,,,4:00,,,,,,,,,,,,,1:00,,,,,,Agent Jasper Sitwell,Male,Caucasian
-,,,:30,,12:45,,,,,15:00,,4:15,,,,,,,,,18:00,,,,,,Hawkeye,Male,Caucasian.
+,,,:30,,12:45,,,,,15:00,,4:15,,,,,,,,,18:00,,,,,,Hawkeye,Male,Caucasian
 ,,,,56:30:00,28:15:00,,,59:00:00,,21:45,:15,38:15:00,,,1:00,,,7:15,,:30,30:45:00,,,,,,Captain America,Male,Caucasian
 ,,,,17:15,,,,,,,,,,,,,,,,,,,,,,,Agent Peggy Carter,Female,Caucasian
 ,,,,15:30,,,,,,,,,,,,,,,,,,,,,,,Red Skull,Male,Caucasian
@@ -57,7 +57,7 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 ,,,,1:30,,,,,,,,,,,,,,,,,,,,,,,Pvt. Jacques Dernier,Male,Caucasian
 ,,,,,5:30,,,3:15,,,,,,,,,,,,,,,,,,,Agent Maria Hill,Female,Caucasian
 ,,,,,2:30,,,,:45,,,,,,,,,,,,,,,,,,The Other,Male,Alien
-,,,,,1:45,,,,,,,,,,,,,,,,,,,,,,Gen. Georgi Luchkov,Male.,Caucasian
+,,,,,1:45,,,,,,,,,,,,,,,,,,,,,,Gen. Georgi Luchkov,Male,Caucasian
 ,,,,,1:00,,,,,,,,,,,,,,,,,,,,,,Councilwoman Malick,Female,Black
 ,,,,,1:00,,,:15,,,,,,,,,,,,,,,,,,,Councilwoman Hawley,Female,Caucasian
 ,,,,,:15,,,,1:00,:15,,,,,,,,31:00:00,,,12:15,,,,,,Thanos,Male,Alien
@@ -72,7 +72,7 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 ,,,,,,1:00,,,,,,,,,,,,,,,,,,,,,Vice-President Rodriguez,Female,Hispanic
 ,,,,,,,,,,,,,,,,,,,,,,,,,1:00,,Ben,Male,Caucasian
 ,,,,,,,,1:15,,:30,,,,,,,,,,,,,,,,,Dr. List,Male,Caucasian
-,,,,,,,8:45,,,,,,,,,,,,,,,,,,,,Malekith,Male,Dark Elf
+,,,,,,,8:45,,,,,,,,,,,,,,,,,,,,Malekith,Male,Alien
 ,,,,,,,6:15,,,,,,,,,,,,,,,,,,,,Algrim,Male,Alien
 ,,,,,,,6:00,,,,,,,,,,,,,,,,,,,,Ian Boothby,Male,Caucasian
 ,,,,,,,2:45,,,,,,,,,,,,,,,,,,,,Richard,Male,Caucasian
@@ -157,7 +157,7 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 ,,,,,,,,,,,,,,1:00,,,,,,,,,,,,,Martinex T'Naga,Male,Alien
 ,,,,,,,,,,,,,,:15,,,,,,,,,,,,,Aleta Ogord,Female,Alien
 ,,,,,,,,,,,,,,:15,,,,,,,,,,,,,Charlie-27,Male,Alien
-,,,,,,,,,,,,,,x:00,,,,,,,,,,,,,Mainframe,Male,Alien.
+,,,,,,,,,,,,,,x:00,,,,,,,,,,,,,Mainframe,Male,Alien
 ,,,,,,,,,,,,,,x:00,,,,,,,,,,,,,Krugarr,Male,Alien
 ,,,,,,,,,,,,,,,19:00,,,,,,,,,,,,Vulture,Male,Caucasian
 ,,,,,,,,,,,,,,,13:45,,,:15,,,:15,14:30,,,,18:30,Ned Leeds,Male,Caucasian
@@ -190,14 +190,14 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 ,,,,,,,,,,,,,,,,,8:15,,,,,,,,,,Zuri,Female,Black
 ,,,,,,,,,,,,,,,,,7:15,,,,,,,,,,W'Kabi,Male,Black
 ,,,,,,,,,,,,,,,,,6:45,,,,,,,,,,Ramonda,Female,Black
-,,,,,,,,,,,,,,,,,5:45,1:00,,,:15,,,,,,M'Baku,Male.,Black
+,,,,,,,,,,,,,,,,,5:45,1:00,,,:15,,,,,,M'Baku,Male,Black
 ,,,,,,,,,,,,,,,,,4:15,,,,,,,,,,N'Jobu,Male,Black
 ,,,,,,,,,,,,,,,,,1:00,,,,,,,,,,Xoliswa,Female,Black
 ,,,,,,,,,,,,,,,,,,4:30,,,1:00,,,,,,Ebony Maw,Male,Alien
 ,,,,,,,,,,,,,,,,,,4:00,,,:30,,,,,,Proxima Midnight,Female,Alien
 ,,,,,,,,,,,,,,,,,,3:30,,,:30,,,,,,Cull Obsidian,Male,Alien
 ,,,,,,,,,,,,,,,,,,3:15,,,:30,,,,,,Corvus Glaive,Male,Alien
-,,,,,,,,,,,,,,,,,,2:45,,,,,,,,,Eitri,Male,Dwarf
+,,,,,,,,,,,,,,,,,,2:45,,,,,,,,,Eitri,Male,Caucasian
 ,,,,,,,,,,,,,,,,,,1:45,,,1:00,,,,,,The Stonekeeper,Female,Alien
 ,,,,,,,,,,,,,,,,,,:45,,,,,,,,,The Collector,Male,Alien
 ,,,,,,,,,,,,,,,,,,x:00,,,,,,,,,Cindy Moon,Female,Asian
@@ -217,7 +217,7 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 ,,,,,,,,,,,,,,,,,,,,4:45,,,,,,,Monica Rambeau,Female,Black
 ,,,,,,,,,,,,,,,,,,,,4:45,,,,,,,Goose,Male,Alien
 ,,,,,,,,,,,,,,,,,,,,3:30,,,,,,,Dr. Wendy Lawson,Female,Caucasian
-,,,,,,,,,,,,,,,,,,,,3:30,,,,,,,Kree Supreme Intelligence,Male.,Alien
+,,,,,,,,,,,,,,,,,,,,3:30,,,,,,,Kree Supreme Intelligence,Male,Alien
 ,,,,,,,,,,,,,,,,,,,,3:30,,,,,,,Minn-Erva,Female,Asian
 ,,,,,,,,,,,,,,,,,,,,2:30,,,,,,,Att-Lass,Male,Alien
 ,,,,,,,,,,,,,,,,,,,,2:15,,,,,,,Bron-Char,Male,Alien
@@ -273,7 +273,7 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 ,,,,,,,,,,,,,,,,,,,,,,,,,17:30,,Sprite,Female,Alien
 ,,,,,,,,,,,,,,,,,,,,,,,,,15:15,,Kingo,Male,Asian
 ,,,,,,,,,,,,,,,,,,,,,,,,,15:15,,Phastos,Male,Black
-,,,,,,,,,,,,,,,,,,,,,,,,,11:15,,Druig,Male,Eternal
+,,,,,,,,,,,,,,,,,,,,,,,,,11:15,,Druig,Male,Caucasian
 ,,,,,,,,,,,,,,,,,,,,,,,,,10:30,,Ajak,Female,Black
 ,,,,,,,,,,,,,,,,,,,,,,,,,10:00,,Makkari,Female,Alien
 ,,,,,,,,,,,,,,,,,,,,,,,,,9:15,,Gilgamesh,Male,Asian
