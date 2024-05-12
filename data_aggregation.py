@@ -77,4 +77,4 @@ mcu_boxoffice['racial_diversity'] = mcu_boxoffice['movie_title'].map(racial_dive
 mcu_boxoffice['racial_diversity'] = mcu_boxoffice['racial_diversity'].round(2)
 
 #Saving to file
-mcu_boxoffice.to_csv('mcu_box_office_with_diversity.csv', index=False)
+mcu_boxoffice.to_csv('mcu_box_office_with_diversity.csv', index=True)

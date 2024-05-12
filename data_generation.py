@@ -2,8 +2,11 @@ import pandas as pd
 import openai
 
 #Setting API key
-api_key = "sk-proj-v6comklbJcwj7wX75eJfT3BlbkFJFUNpDGwR1ORsj1D5IKPY"
-openai.api_key = api_key
+def load_api_key():
+    with open('api-key.txt', 'r') as file:
+        return file.readline().strip()
+
+openai.api_key = load_api_key()
 
 #Loading data
 mcu_filtered = pd.read_csv("mcu_screentime_filtered.csv")

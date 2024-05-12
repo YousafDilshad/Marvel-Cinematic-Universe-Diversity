@@ -129,7 +129,7 @@ for i, phase in enumerate(mcu_final_data['mcu_phase']):
 # Show plot
 plt.legend()
 plt.tight_layout()
-plt.savefig('lineplot.png')
+plt.savefig('diversity_lineplot.png')
 
 # Create a custom palette from red to yellow (reversed)
 custom_palette = sns.color_palette("autumn", as_cmap=True)
